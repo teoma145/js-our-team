@@ -33,4 +33,6 @@ const Team = [
     },
 
 ];
+const rowEl = document.querySelector('.row');
+console.log(rowEl);
 
