@@ -63,7 +63,7 @@ function printCol(teamMember) {
 const newTeam={
     name:'Gianbacucco Romantipippo',
     role:'Mascotte',
-    picture:'224196586.jpg'
+    picture:'giambacucco.jpg'
 }
 
     Team.push(newTeam);
