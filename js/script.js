@@ -48,7 +48,7 @@ function printCol(teamMember) {
     const col = document.createElement('div');
     col.classList.add('col-4')
     const template = `
-        <div class="card text-start">
+        <div class="card text-center mt-4">
           <img class="card-img-top" src="img/${teamMember.picture}" alt="Title">
           <div class="card-body">
             <h4 class="card-title">${teamMember.name}</h4>
@@ -60,3 +60,12 @@ function printCol(teamMember) {
     rowEl.append(col);
 
 }
+const newTeam={
+    name:'Gianbacucco Romantipippo',
+    role:'Mascotte',
+    picture:'224196586.jpg'
+}
+
+    Team.push(newTeam);
+    printCol(newTeam);
+    
