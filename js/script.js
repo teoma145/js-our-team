@@ -9,7 +9,7 @@ const Team = [
     {
         name: 'Angela Caroll',
         role : 'Chief Editor',
-        picture:'angela-carroll-chief-editor.jpg'
+        picture:'angela-caroll-chief-editor.jpg'
     },
     {
         name: 'Walter Gordon',
@@ -29,10 +29,34 @@ const Team = [
     {
         name: 'Barbara Ramos',
         role : 'Graphic Designer',
-        picture:'barbara-ramos-designer.jpg'
+        picture:'barbara-ramos-graphic-designer.jpg'
     },
 
 ];
 const rowEl = document.querySelector('.row');
 console.log(rowEl);
 
+
+for (let i = 0; i < Team.length; i++) {
+    printCol(Team[i]);
+
+}
+
+
+
+function printCol(teamMember) {
+    const col = document.createElement('div');
+    col.classList.add('col-4')
+    const template = `
+        <div class="card text-start">
+          <img class="card-img-top" src="img/${teamMember.picture}" alt="Title">
+          <div class="card-body">
+            <h4 class="card-title">${teamMember.name}</h4>
+            <p class="card-text">${teamMember.role}</p>
+          </div>
+        </div>
+    `;
+    col.innerHTML = template;
+    rowEl.append(col);
+
+}
